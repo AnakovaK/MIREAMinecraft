@@ -1,12 +1,20 @@
 {
   "type": "mireamod:mireadim",
   "generator": {
-    "type": "minecraft:noise",
-    "seed": -51004709,
-    "settings": "minecraft:overworld",
-    "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "minecraft:plains"
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:beach",
+      "lakes": true,
+      "features": true,
+      "layers": [
+        {
+          "block": "minecraft:moss_block",
+          "height": 10
+        }
+      ],
+      "structure_overrides": [
+        "minecraft:end_cities"
+      ]
     }
   }
 }
