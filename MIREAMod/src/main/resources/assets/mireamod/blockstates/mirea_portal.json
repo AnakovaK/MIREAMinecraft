@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z": { "model": "mireamod:block/mirea_portal_ew" },
+    "axis=x": { "model": "mireamod:block/mirea_portal_ns" }
+  }
+}
