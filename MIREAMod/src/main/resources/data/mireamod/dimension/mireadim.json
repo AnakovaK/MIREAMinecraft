@@ -1,19 +1,24 @@
 {
   "type": "mireamod:mireadim",
-  "generator": {
-    "type": "minecraft:flat",
-    "settings": {
-      "biome": "minecraft:beach",
-      "lakes": true,
-      "features": true,
-      "layers": [
+    "generator": {
+    "type": "minecraft:noise",
+    "seed": 1146657197,
+    "settings": "minecraft:floating_islands",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
         {
-          "block": "minecraft:moss_block",
-          "height": 10
+          "biome": "minecraft:plains",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
         }
-      ],
-      "structure_overrides": [
-        "minecraft:end_cities"
       ]
     }
   }
