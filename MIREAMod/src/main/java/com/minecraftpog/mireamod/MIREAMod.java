@@ -26,9 +26,12 @@ public class MIREAMod {
 		ModBlocks.register(bus);
 		ModDimensions.register();
 	}
+	
 	private void clientSetup(final FMLClientSetupEvent event) {
-
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MIREA_PORTAL.get(), RenderType.translucent());
+        
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_CORRUPTED_LEAVES.get(), RenderType.cutout());
+        //ItemBlockRenderTypes.setRenderLayer(ModBlocks.MIREA_SAPLING.get(), RenderType.cutout());
     }
 	  private void setup(final FMLCommonSetupEvent event) {
 	        

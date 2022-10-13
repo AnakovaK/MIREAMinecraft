@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/cross",
+	"textures": {
+		"all": "mireamod:block/mirea_sapling"
+	}
+}
