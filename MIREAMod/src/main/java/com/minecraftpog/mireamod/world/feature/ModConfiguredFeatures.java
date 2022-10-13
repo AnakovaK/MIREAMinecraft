@@ -24,7 +24,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> PURPLE_CORRUPTED_TREE =
-            FeatureUtils.register("ebony", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+            FeatureUtils.register("purple_corrupted", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                     BlockStateProvider.simple(ModBlocks.PURPLE_CORRUPTED_LOG.get()),
                     new FancyTrunkPlacer(5, 6, 3),
                     BlockStateProvider.simple(ModBlocks.PURPLE_CORRUPTED_LEAVES.get()),
@@ -38,4 +38,20 @@ public class ModConfiguredFeatures {
             FeatureUtils.register("purple_corrupted_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(PURPLE_CORRUPTED_CHECKED,
                             0.5F)), PURPLE_CORRUPTED_CHECKED));
+    
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> RED_CORRUPTED_TREE =
+            FeatureUtils.register("red_corrupted", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(ModBlocks.RED_CORRUPTED_LOG.get()),
+                    new FancyTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.simple(ModBlocks.PURPLE_CORRUPTED_LEAVES.get()),
+                    new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
+
+    public static final Holder<PlacedFeature> RED_CORRUPTED_CHECKED = PlacementUtils.register("red_corrupted_checked", RED_CORRUPTED_TREE,
+                    PlacementUtils.filteredByBlockSurvival(ModBlocks.PURPLE_CORRUPTED_SAPLING.get()));
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> RED_CORRUPTED_SPAWN =
+            FeatureUtils.register("red_corrupted_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(RED_CORRUPTED_CHECKED,
+                            0.5F)), RED_CORRUPTED_CHECKED));
 }

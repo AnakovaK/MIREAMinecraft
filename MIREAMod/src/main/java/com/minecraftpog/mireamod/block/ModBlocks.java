@@ -62,10 +62,11 @@ public class ModBlocks {
     			
     		}, CreativeModeTab.TAB_DECORATIONS);
     
-    //public static final RegistryObject<Block> MIREA_SAPLING = registerBlock("mirea_sapling",
-    //		()-> new SaplingBlock(new MireaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), CreativeModeTab.TAB_DECORATIONS);
-    
     public static final RegistryObject<Block> PURPLE_CORRUPTED_LOG = registerBlock("purple_corrupted_log",
+    		()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+    		CreativeModeTab.TAB_DECORATIONS);
+    
+    public static final RegistryObject<Block> RED_CORRUPTED_LOG = registerBlock("red_corrupted_log",
     		()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
     		CreativeModeTab.TAB_DECORATIONS);
     

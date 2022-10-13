@@ -24,6 +24,7 @@ public class ModTreeGeneration {
                     event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
 
             base.add(ModPlacedFeatures.PURPLE_CORRUPTED_PLACED);
+            base.add(ModPlacedFeatures.RED_CORRUPTED_PLACED);
         }
     }
 }
