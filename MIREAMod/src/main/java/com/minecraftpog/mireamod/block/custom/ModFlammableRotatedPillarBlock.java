@@ -40,9 +40,9 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     public BlockState getToolModifiedState(BlockState state, Level world, BlockPos pos, Player player,
                                            ItemStack stack, ToolAction toolAction) {
         if(stack.getItem() instanceof AxeItem) {
-            //if(state.is(ModBlocks.PURPLE_CORRUPTED_LOG.get())) {
-            //    return ModBlocks.STRIPPED_PURPLE_CORRUPTED_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-            //}
+            if(state.is(ModBlocks.PURPLE_CORRUPTED_LOG.get())) {
+                return ModBlocks.STRIPPED_PURPLE_CORRUPTED_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
         }
 
         return super.getToolModifiedState(state, world, pos, player, stack, toolAction);

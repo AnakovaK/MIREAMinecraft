@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mireamod:block/purple_corrupted_sapling"
+  }
+}

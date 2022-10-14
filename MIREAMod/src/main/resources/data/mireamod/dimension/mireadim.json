@@ -8,7 +8,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:plains",
+          "biome": "minecraft:the_void",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
