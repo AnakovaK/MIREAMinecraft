@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mireamod:block/purple_corrupted_log_top",
+    "side": "mireamod:block/purple_corrupted_log"
+  }
+}
