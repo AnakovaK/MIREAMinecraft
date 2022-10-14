@@ -35,6 +35,7 @@ public class MIREAMod {
         
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_CORRUPTED_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_CORRUPTED_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_CORRUPTED_SAPLING.get(), RenderType.cutout());
     }
 	  private void setup(final FMLCommonSetupEvent event) {        
 	        //some preinit code

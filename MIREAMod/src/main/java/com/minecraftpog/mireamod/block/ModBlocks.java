@@ -7,6 +7,7 @@ import com.minecraftpog.mireamod.block.custom.*;
 import com.minecraftpog.mireamod.item.ModCreativeModeTab;
 import com.minecraftpog.mireamod.item.ModItems;
 import com.minecraftpog.mireamod.world.feature.tree.PurpleCorruptedTreeGrower;
+import com.minecraftpog.mireamod.world.feature.tree.RedCorruptedTreeGrower;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -96,6 +97,10 @@ public class ModBlocks {
     
     public static final RegistryObject<Block> PURPLE_CORRUPTED_SAPLING = registerBlock("purple_corrupted_sapling",
     		()-> new SaplingBlock(new PurpleCorruptedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)),
+    		ModCreativeModeTab.TUTORIAL_TAB);
+    
+    public static final RegistryObject<Block> RED_CORRUPTED_SAPLING = registerBlock("red_corrupted_sapling",
+    		()-> new SaplingBlock(new RedCorruptedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)),
     		ModCreativeModeTab.TUTORIAL_TAB);
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
