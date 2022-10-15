@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "mireamod:block/red_corrupted_sapling"
+	}
+}
