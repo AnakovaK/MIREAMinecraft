@@ -6,6 +6,8 @@ import com.minecraftpog.mireamod.MIREAMod;
 import com.minecraftpog.mireamod.block.custom.*;
 import com.minecraftpog.mireamod.item.ModCreativeModeTab;
 import com.minecraftpog.mireamod.item.ModItems;
+import com.minecraftpog.mireamod.world.feature.tree.PurpleCorruptedTreeGrower;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -41,6 +43,58 @@ public class ModBlocks {
                 MireaPortalBlock::new);
 
 
+    public static final RegistryObject<Block> PURPLE_CORRUPTED_LEAVES = registerBlock("purple_corrupted_leaves",
+    		()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
+    			
+    			@Override 
+    			public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    				return true;
+    			}
+    			
+    			@Override 
+    			public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    				return 60;
+    			}
+    			
+    			@Override 
+    			public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    				return 30;
+    			}
+    			
+    		}, CreativeModeTab.TAB_DECORATIONS);
+    
+    public static final RegistryObject<Block> PURPLE_CORRUPTED_LOG = registerBlock("purple_corrupted_log",
+    		()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+    		CreativeModeTab.TAB_DECORATIONS);
+    
+    public static final RegistryObject<Block> STRIPPED_PURPLE_CORRUPTED_LOG = registerBlock("stripped_purple_corrupted_log",
+    		()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
+    		CreativeModeTab.TAB_DECORATIONS);
+    
+    public static final RegistryObject<Block> PURPLE_CORRUPTED_PLANKS = registerBlock("purple_corrupted_planks",
+    		()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
+    			
+    			@Override 
+    			public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    				return true;
+    			}
+    			
+    			@Override 
+    			public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    				return 20;
+    			}
+    			
+    			@Override 
+    			public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+    				return 5;
+    			}
+    			
+    		}, CreativeModeTab.TAB_DECORATIONS);
+    
+    public static final RegistryObject<Block> PURPLE_CORRUPTED_SAPLING = registerBlock("purple_corrupted_sapling",
+    		()-> new SaplingBlock(new PurpleCorruptedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)),
+    		ModCreativeModeTab.TUTORIAL_TAB);
+    
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

@@ -24,11 +24,17 @@ public class MIREAMod {
 		ModItems.register(bus);
 		ModStructures.register(bus);
 		ModBlocks.register(bus);
+		
+		bus.addListener(this::setup);
+		bus.addListener(this::clientSetup);
+		
 		ModDimensions.register();
 	}
 	private void clientSetup(final FMLClientSetupEvent event) {
-
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MIREA_PORTAL.get(), RenderType.translucent());
+        
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_CORRUPTED_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_CORRUPTED_SAPLING.get(), RenderType.cutout());
     }
 	  private void setup(final FMLCommonSetupEvent event) {
 	        

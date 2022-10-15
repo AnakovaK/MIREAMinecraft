@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/leaves",
+	"textures": {
+		"all": "mireamod:block/purple_corrupted_leaves"
+	}
+}
