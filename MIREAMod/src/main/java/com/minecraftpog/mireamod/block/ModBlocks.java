@@ -58,16 +58,12 @@ public class ModBlocks {
     			
     			@Override 
     			public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-    				return 20;
+    				return 30;
     			}
     			
     		}, CreativeModeTab.TAB_DECORATIONS);
     
     public static final RegistryObject<Block> PURPLE_CORRUPTED_LOG = registerBlock("purple_corrupted_log",
-    		()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
-    		CreativeModeTab.TAB_DECORATIONS);
-    
-    public static final RegistryObject<Block> RED_CORRUPTED_LOG = registerBlock("red_corrupted_log",
     		()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
     		CreativeModeTab.TAB_DECORATIONS);
     
@@ -85,12 +81,12 @@ public class ModBlocks {
     			
     			@Override 
     			public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-    				return 60;
+    				return 20;
     			}
     			
     			@Override 
     			public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-    				return 20;
+    				return 5;
     			}
     			
     		}, CreativeModeTab.TAB_DECORATIONS);
