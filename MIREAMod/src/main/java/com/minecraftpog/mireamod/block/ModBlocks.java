@@ -123,4 +123,6 @@ public class ModBlocks {
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
     }
+    
+
 }
