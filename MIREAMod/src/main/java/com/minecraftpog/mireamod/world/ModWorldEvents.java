@@ -68,7 +68,7 @@ public class ModWorldEvents {
     }
     
     @SubscribeEvent
-    public static void onBreakEvent(BreakEvent event, LivingEntity entity) {
+    public static void onBreakEvent(BreakEvent event) {
     	Player player = event.getPlayer();
     	BlockState state = event.getState();
     	if (state.getBlock() == ModBlocks.RED_CORRUPTED_LOG.get()) {
