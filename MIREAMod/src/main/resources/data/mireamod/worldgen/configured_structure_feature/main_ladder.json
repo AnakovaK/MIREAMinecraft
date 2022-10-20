@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "mireamod:main_ladder/start_pool",
+    "size": 2
+  },
+
+  "biomes": "#mireamod:has_structure/main_ladder",
+
+  "adapt_noise": true,
+
+  "spawn_overrides": {
+    "creature": {
+      "bounding_box": "piece",
+      "spawns": []
+    }
+  }
+}
