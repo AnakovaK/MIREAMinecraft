@@ -3,14 +3,15 @@
 	"item.mireamod.citrine": "Citrine",
 	"block.mireamod.citrine_block": "Citrine Block",
 	"item.mireamod.citrine_staff": "Citrine Staff",
-	
+
 	"block.mireamod.purple_corrupted_leaves": "Purple Corrupted Leaves",
 	"block.mireamod.purple_corrupted_log": "Purple Corrupted Log",
 	"block.mireamod.purple_corrupted_planks": "Purple Corrupted Planks",
 	"block.mireamod.purple_corrupted_wood": "Purple Corrupted Wood",
 	"block.mireamod.stripped_purple_corrupted_wood": "Stripped Purple Corrupted Wood",
 	"block.mireamod.purple_corrupted_sapling": "Purple Corrupted Sapling",
-	
+	"block.mireamod.vending_machine_block": "Vending Machine",
+
 	"block.mireamod.red_corrupted_log": "Red Corrupted Log",
 	"block.mireamod.red_corrupted_sapling": "Purple Corrupted Sapling"
 }

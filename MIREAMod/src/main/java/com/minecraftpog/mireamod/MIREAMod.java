@@ -1,10 +1,15 @@
 package com.minecraftpog.mireamod;
 
 import com.minecraftpog.mireamod.block.ModBlocks;
+import com.minecraftpog.mireamod.block.entity.ModBlockEntities;
 import com.minecraftpog.mireamod.item.ModItems;
+import com.minecraftpog.mireamod.recipe.ModRecipes;
+import com.minecraftpog.mireamod.screen.ModMenuTypes;
+import com.minecraftpog.mireamod.screen.VendingMachineScreen;
 import com.minecraftpog.mireamod.world.dimension.ModDimensions;
 import com.minecraftpog.mireamod.world.structure.ModStructures;
 
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,6 +29,9 @@ public class MIREAMod {
 		ModItems.register(bus);
 		ModStructures.register(bus);
 		ModBlocks.register(bus);
+		ModMenuTypes.register(bus);
+		ModBlockEntities.register(bus);
+		ModRecipes.register(bus);
 		
 		bus.addListener(this::setup);
 		bus.addListener(this::clientSetup);
@@ -37,6 +45,9 @@ public class MIREAMod {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_CORRUPTED_SAPLING.get(), RenderType.cutout());
         
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_CORRUPTED_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.VENDING_MACHINE_BLOCK.get(), RenderType.cutout());
+        
+        MenuScreens.register(ModMenuTypes.VENDING_MACHINE_MENU.get(), VendingMachineScreen::new);
     }
 	  private void setup(final FMLCommonSetupEvent event) {
 	        

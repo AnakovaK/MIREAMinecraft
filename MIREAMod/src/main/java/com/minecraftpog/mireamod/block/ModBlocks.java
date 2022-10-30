@@ -42,7 +42,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MIREA_PORTAL = registerBlockWithoutBlockItem("mirea_portal",
                 MireaPortalBlock::new);
-
+    
+    public static final RegistryObject<Block> VENDING_MACHINE_BLOCK = registerBlock("vending_machine_block",
+            () -> new VendingMachineBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),
+            ModCreativeModeTab.TUTORIAL_TAB);
 
     public static final RegistryObject<Block> PURPLE_CORRUPTED_LEAVES = registerBlock("purple_corrupted_leaves",
     		()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
