@@ -1,3 +1,5 @@
 {
-	"item.mireamod.example_item": "Example Item"
+	"item.mireamod.example_item": "Example Item",
+	"item.mireamod.zachetka": "Zachetka",
+	"item.mireamod.zachetka.no_valuables": "No Valuables Found!"
 }

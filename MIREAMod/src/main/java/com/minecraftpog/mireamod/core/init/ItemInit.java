@@ -1,6 +1,8 @@
 package com.minecraftpog.mireamod.core.init;
 
 import com.minecraftpog.mireamod.MIREAMod;
+import com.minecraftpog.mireamod.common.item.ZachetkaItem;
+
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,4 +15,7 @@ public final class ItemInit {
 	
 	public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item",
 			() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).fireResistant()));
+	
+	public static final RegistryObject<ZachetkaItem> ZACHETKA = ITEMS.register("zachetka",
+			() -> new ZachetkaItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(100)));
 }
