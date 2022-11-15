@@ -1,5 +1,9 @@
 {
 	"item.mireamod.example_item": "Example Item",
 	"item.mireamod.zachetka": "Zachetka",
-	"item.mireamod.zachetka.no_valuables": "No Valuables Found!"
+	"item.mireamod.zachetka.no_valuables": "No Valuables Found!",
+	"item.mireamod.beer": "Beer",
+	"item.mireamod.shawa": "Shawurma",
+	"item.mireamod.siga": "Cigarette",
+	"item.mireamod.energos": "Energy drink"	
 }
