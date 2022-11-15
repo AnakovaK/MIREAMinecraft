@@ -1,6 +1,7 @@
 {
 	"item.mireamod.example_item": "LOVE WAND",
 	"item.mireamod.citrine": "Citrine",
+
 	"block.mireamod.citrine_block": "Citrine Block",
 	"item.mireamod.citrine_staff": "Citrine Staff",
 	
@@ -12,5 +13,11 @@
 	"block.mireamod.purple_corrupted_sapling": "Purple Corrupted Sapling",
 	
 	"block.mireamod.red_corrupted_log": "Red Corrupted Log",
-	"block.mireamod.red_corrupted_sapling": "Purple Corrupted Sapling"
+	"block.mireamod.red_corrupted_sapling": "Purple Corrupted Sapling",
+	"item.mireamod.zachetka": "Zachetka",
+	"item.mireamod.zachetka.no_valuables": "No Valuables Found!",
+	"item.mireamod.beer": "Beer",
+	"item.mireamod.shawa": "Shawurma",
+	"item.mireamod.siga": "Cigarette",
+	"item.mireamod.energos": "Energy drink"
 }
