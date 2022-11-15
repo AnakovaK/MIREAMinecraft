@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "facing=north": { "model": "mireamod:block/vending_machine_block" },
+    "facing=east": {
+      "model": "mireamod:block/vending_machine_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "mireamod:block/vending_machine_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mireamod:block/vending_machine_block",
+      "y": 270
+    }
+  }
+}
