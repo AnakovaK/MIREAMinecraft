@@ -1,0 +1,11 @@
+{
+  "type": "mireamod:vending_machine",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "item": "mireamod:beer"
+  }
+}
